@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:wght@400;600;700;900&family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 200vh;
+}
+header{
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+/* INICIO MENU*/
+.menu-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    margin-left: 40px;
+    cursor: pointer;
+    padding-bottom: 6px;
+}
+.bar{
+    border-top: 1px solid black;
+    margin-top: 6px;
+    width: 20px;
+    
+    
+}
+.menu-icon:hover{
+    background-color: rgb(219, 218, 218);
+    border-radius: 20px;
+    
+}
+/* FIM MENU*/
+
+/* INICIO LOGO*/
+.logo{
+    margin-top: 13px;
+    margin-left: 30px;
+    
+}
+.logo a img{
+    width: 100px;
+    height: 25px;
+    
+}
+/* FIM MENU*/
+
+/* INICIO SEARCH-BAR*/
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-grow: 1;
+}
+
+
+.search-input{
+    width: 500px;
+    height: 42px;
+    border: none;
+    outline: none;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #CCCCCC;
+    padding-left: 10px;
+    transition: all 0.3s;
+}
+.search-input:focus-within {
+    border-color: #1E90FF; /* Substitua pela cor desejada */
+    width: 550px;
+    background-size: 20px;
+    background-image: url(/images/loupe.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    
+}
+
+.search-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+     
+}
+.search-button img{
+    width: 30px;
+    height: 35px;
+    background-size: cover;
+    object-fit: contain;
+    padding: 3px;
+    
+    
+    
+}
+/* FIM SEARCH-BAR*/
+
+/* INICIO ICONES*/
+.container-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 40px;
+    
+  }
+.container-icons img{
+    width: 24px;
+    height: 24px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+#profile {
+    width: 34px;
+    height: 34px;
+    border: 1px solid black;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#profile img {
+    width: 100%;
+    height: 100%;
+}
+/* FIM ICONES*/
+
+/* INICIO CORPO PRINCIPAL*/
+
+.container-main{
+    display: flex;
+    margin-left: 74px;
+    margin-top: 28px;
+}
+/* INICIO VIDEO*/
+#video {
+    width: 1260px;
+    height: 700px;
+}
+#video iframe{
+    width: 100%;
+    height: 100%;
+}
+/* FIM VIDEO*/
+
+/* INICIO SIDE-BAR*/
+.side-bar{
+    width: 390px;
+    height: 700px;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+}
+.Thumbs a{
+    display: flex;  
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: black;
+}
+.Thumbs a p{
+    color: #515151;
+    
+}
+.Thumbs h3{
+    font-size: 15px;
+}
+
+.Thumbs img{
+    height: 94px;
+    width: 168px;
+    border-radius: 10px;
+    margin-right: 16px;
+}
+.Thumbs div p {
+    font-size: 12px;
+    margin-top: 7px;
+    width: 172px;
+}
+/* FIM SIDE-BAR*/
+
+/* INICIO TITULO VIDEO*/
+.container-main h1 {
+    font-size: 1.5rem; /* Tamanho da fonte inicial */
+  }
+/* FIM TITULO VIDEO*/
+
+/*INFORMACOES DO CANAL*/
+.container-info {
+    display: flex;
+    height: 45px;
+    margin-left: 74px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+/* INICIO LOGO*/
+.channel-logo{
+    display: flex;
+    width: 42px;
+    height: 42px;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.channel-logo img{
+    background-size: cover;
+    width: 42px;
+    height: 42px;
+    
+}
+/* FIM LOGO*/
+/* INICIO NOME-CANAL*/
+.channel-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    justify-content: center;
+}
+.channel-name a{
+    text-decoration: none;
+    color: black;
+}
+.channel-name h2 {
+    font-size: 1rem;
+}
+  
+.channel-name p {
+    font-size: 0.75rem;
+}
+/* FIM NOME-CANAL*/
+
+/* INICIO BOTAO-SUB*/
+#sub-button{
+    display: flex;
+    justify-content: center;
+}
+#sub-button button{
+    color: white;
+    background-color: #0f0f0f;
+    border: none;
+    border-radius: 70px;
+    font-size: 0.92rem;
+    padding: 0 16px;
+    cursor: pointer;
+    margin-left: 50px;
+    height: 36px;
+    
+}
+/* FIM BOTAO-SUB*/
+
+/* INICIO LIKE/DISLIKE-BOTAO*/
+.like-dislike-button{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    height: 36px;
+    border-radius: 30px;
+    margin-left: 400px;
+}
+.like-dislike-button img{
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    
+}
+.like-dislike-button button{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.like-dislike-button p {
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: transparent;
+}
+#like-button{
+    padding: 6px 15px 9px 10px;
+    position: relative;
+    
+}
+
+#dislike-button{
+    padding: 8px 15px 8px 10px;
+    border-left: 1px solid lightgray;
+}
+#like-button:hover {
+    background-color: rgb(219, 218, 218);
+    border-radius: 20px 0 0 20px;
+}
+#dislike-button:hover {
+    background-color: rgb(219, 218, 218);
+    border-radius: 0 20px 20px 0;
+}
+#like-button:hover::after {
+    content: "Marcar como 'Gostei";
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin-left: -30px;
+    margin-top: 80px;
+}
+#dislike-button:hover::after {
+    content: "Marcar como 'Não gostei'";
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin-left: -70px;
+    margin-top: 80px;
+}
+/* FIM LIKE/DISLIKE-BOTAO*/
+
+/* INICIO BOTAO-COMPARTILHAR*/
+.share-button {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+.share-button img {
+    height: 24px;
+    margin-right: 10px;
+    
+}
+.share-button:hover{
+    background-color: rgb(219, 218, 218);
+    border-radius: 20px;
+}
+/* FIM BOTAO-COMPARTILHAR*/
+
+/* INICIO BOTAO-DOWNLOAD*/
+.download-button {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+.download-button img{
+    height: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.download-button:hover{
+    background-color: rgb(219, 218, 218);
+    border-radius: 20px;
+}
+
+/* FIM BOTAO-DOWNLOAD*/
+
+/* INICIO BOTAO-SALVAR*/
+.save-button {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 15px 16px;
+    cursor: pointer;
+}
+.save-button img{
+    height: 16px;
+}
+.save-button:hover{
+    background-color: rgb(219, 218, 218);
+    border-radius: 20px;
+}
+.save-button span{
+    margin-left: 10px;
+}
+/* FIM BOTAO-SALVAR*/
+
+/* INICIO DESCRIÇÃO*/
+#showmore{
+    display: flex;
+    flex-direction: column;
+    margin-left: 74px;
+    margin-top: 16px;
+}
+#showmore h3{
+    font-size: 14px;
+}
+#showmore p {
+    width: 520px;
+    color: #515151;
+    font-size: 14px;
+    margin-top: 16px;
+}
+/* FIM DESCRIÇÃO*/
