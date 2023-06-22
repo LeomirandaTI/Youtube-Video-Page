@@ -75,7 +75,7 @@ header{
     transition: all 0.3s;
 }
 .search-input:focus-within {
-    border-color: #1E90FF; /* Substitua pela cor desejada */
+    border-color: #1E90FF;
     width: 550px;
     background-size: 20px;
     background-image: url(images/loupe.png);
