@@ -148,8 +148,8 @@ header{
 }
 /* INICIO VIDEO*/
 #video {
-    width: 1260px;
-    height: 700px;
+    width: 100%;
+    height: 550px;
 }
 #video iframe{
     width: 100%;
@@ -162,6 +162,7 @@ header{
 .container{
     display: flex;
     flex-direction: column;
+    max-width: 1350px;
 }
 /* INICIO SIDE-BAR*/
 .side-bar{
