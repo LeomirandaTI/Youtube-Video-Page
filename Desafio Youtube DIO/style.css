@@ -15,6 +15,9 @@ header{
     
     
 }
+.scale{
+    scale: .9;
+}
 /* INICIO MENU*/
 .menu-icon{
     width: 40px;
@@ -417,3 +420,31 @@ header{
     margin-top: 16px;
 }
 /* FIM DESCRIÇÃO*/
+
+@media screen and (max-width: 1770px){
+    .like-dislike-button {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        height: 36px;
+        border-radius: 30px;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1515px){
+    .save-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1370px){
+    .download-button{
+        display: none;
+    }
+}
+@media screen and (max-width: 1230px){
+    .like-dislike-button {
+        margin-left: 50px;
+    }
+}
