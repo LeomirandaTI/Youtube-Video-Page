@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:wght@400;600;700;900&family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:wght@400;600;700;900&family=Roboto:wght@400;500;700;900&display=swap');
 *{
     margin: 0;
     box-sizing: border-box;
@@ -11,6 +11,7 @@ header{
     height: 56px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
     
     
 }
@@ -78,7 +79,7 @@ header{
     border-color: #1E90FF;
     width: 550px;
     background-size: 20px;
-    background-image: url(images/loupe.png);
+    background-image: url(/images/loupe.png);
     background-repeat: no-repeat;
     background-position: 10px center;
     padding-left: 40px;
@@ -140,8 +141,10 @@ header{
 
 .container-main{
     display: flex;
+    flex-direction: row;
     margin-left: 74px;
     margin-top: 28px;
+    gap: 80px;
 }
 /* INICIO VIDEO*/
 #video {
@@ -152,15 +155,22 @@ header{
     width: 100%;
     height: 100%;
 }
+.Video-title{
+    margin: 20px 0 0 0 ;
+}
 /* FIM VIDEO*/
-
+.container{
+    display: flex;
+    flex-direction: column;
+}
 /* INICIO SIDE-BAR*/
 .side-bar{
     width: 390px;
-    height: 700px;
-    margin-left: 90px;
+    
+    margin: 0;
     display: flex;
     flex-direction: column;
+
 }
 .Thumbs a{
     display: flex;  
@@ -199,8 +209,7 @@ header{
 .container-info {
     display: flex;
     height: 45px;
-    margin-left: 74px;
-    margin-top: 16px;
+    margin: 20px 0 0 0;
     flex-wrap: wrap;
 }
 /* INICIO LOGO*/
@@ -265,7 +274,7 @@ header{
     flex-direction: row;
     height: 36px;
     border-radius: 30px;
-    margin-left: 400px;
+    margin-left: 350px;
 }
 .like-dislike-button img{
     height: 20px;
@@ -395,8 +404,7 @@ header{
 #showmore{
     display: flex;
     flex-direction: column;
-    margin-left: 74px;
-    margin-top: 16px;
+    margin: 20px 0 0 0 ;
 }
 #showmore h3{
     font-size: 14px;
